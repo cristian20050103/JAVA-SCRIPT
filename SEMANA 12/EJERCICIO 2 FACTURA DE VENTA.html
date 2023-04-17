@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FACTURA DE VENTA</title>
+</head>
+<body>
+    <center>
+    <h2>FACTURA DE VENTA</h2>
+    <script>
+        //Programa que permita capturar el nombre de un producto, su precio unitario y su cantidad, luego calcular subtotal, descuento 10%, iva 19% y neto a pagar. Enviar mensaje Gracias por su compra//
+        const SPeso = new Intl.NumberFormat('es-CO', {
+       style: 'currency',
+       currency: 'COP',
+       minimumFractionDigits: 0
+     });
+     //Inicializacion de variables//
+    let precio,cant,desc,iva,subt,netop;
+    let nombrep;
+    //Entrada//
+    nombrep=prompt("Ingrese nombre producto");
+    precio=parseInt(prompt("Ingrese precio del producto"));
+    cant=parseInt(prompt("Ingrese cantidad a comprar"));
+    //proceso//
+    subt=precio*cant;
+    desc=(subt*0.10);//0.10 equivale al 10%//
+    iva=(subt-desc)*0.19;//0.19 equivale a 19%
+    netop=subt-desc+iva;
+    //salida//
+    document.write("**********************************"+"<br>");
+    document.write("producto comprado..."+nombrep+"&nbsp&nbsp"+"precio producto..."+SPeso.format(precio)+"&nbsp&nbsp"+"cantidad comprada..."+cant+"<br>" );
+    document.write("***************************************"+"<br>");
+    document.write("subtotal:"+"<br>");
+    document.write(SPeso.format(subt)+"<br>");
+    document.write("descuento:"+"<br>");
+    document.write(SPeso.format(desc)+"<br>");
+    document.write("Iva:"+"<br>");
+    document.write(SPeso.format(iva)+"<br>");
+    document.write("neto a pagar:"+"<br>");
+    document.write(SPeso.format(netop)+"<br>");
+    document.write("GRACIAS POR SU COMPRA"+"<br>");
+    document.write("******************************")
+    </script>
+    </center>
+</body>
+</html>
