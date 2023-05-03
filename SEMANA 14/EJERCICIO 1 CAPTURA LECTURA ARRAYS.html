@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ARRAYS</title>
+</head>
+<body>
+    <center>
+        <h1>CREAR ARRAYS POR CAPTURA-LECTURA</h1>
+        <h2>CON CICLO FOR</h2>
+        <script>
+            //variable tipo objeto arrays
+            let num;
+            let datos=new Array();
+            //captura
+            num=parseInt(prompt("Ingrese cantidad de datos en Arrays"));
+            for(i=0;i<num;i++){
+                datos[i]=prompt("Ingrese datos al azar..."+i);
+            }
+            //IMPRIMIR
+            for(i=0;i<num;i++){
+                document.write(datos[i]+"<br>");
+                console.log(datos[i]);
+            }
+        </script>
+    </center>
+    
+</body>
+</html>
