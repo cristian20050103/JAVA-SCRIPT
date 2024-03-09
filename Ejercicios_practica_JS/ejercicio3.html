@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio unidades y decenas</title>
+</head>
+<body>
+    <h1>En este script se pide al usuario un número de dos dígitos y se devuelve
+     el número de unidades y de decenas, o sea, cada dígito del número. </h1>
+     <script>
+        let numero;
+        numero=parseInt(prompt("ingrese el numero deseado"));
+        decenas=parseInt(numero/10);
+        unidades=(numero%10);
+        document.write("El numero de decenas es===> ",decenas +"<br>");
+        document.write("El numero de unidades es===> ",unidades);
+     </script>
+</body>
+</html>

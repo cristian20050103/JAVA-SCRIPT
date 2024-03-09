@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 4</title>
+</head>
+<body>
+    <h1>Una tortilla de papas lleva 200 gramos de papas por persona.
+     Por cada kilo de papas se necesitan 5 huevos y 300 gramos de cebolla. 
+     Escribe un script que dado el número de comensales calcule las cantidades de ingredientes necesarias</h1>
+     <script>
+        let comensales,papas,huevos,cebolla;
+        comensales=parseInt(prompt("Ingrese el numero de comensales"));
+        papas=parseFloat(comensales*200);
+        huevos=parseFloat(papas/200);
+        cebolla=parseFloat(papas*0.30);
+        document.write("el numero de comensales es=====>",comensales+"<br>");
+        document.write("Se nesesitara:"+"<br>");
+        document.write(papas," gr"," de papas"+"<br>");
+        document.write("se nesesitara ",huevos, " huevos"+"<br>");
+        document.write("se nesesitara ",cebolla," gr cebolla"+"<br>");
+
+
+
+     </script>
+</body>
+</html>
