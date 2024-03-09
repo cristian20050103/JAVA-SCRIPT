@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <center>
+        <h1> ******* suma de productos mas iva del 19%*****</h1>
+    <script>
+        const SPeso = new Intl.NumberFormat('es-CO', {
+            style: 'currency',
+            currency: 'COP',
+            minimumFractionDigits: 0
+            });
+        let a,b;
+        a=parseFloat(prompt("Ingresa valor producto1"));
+        b=parseFloat(prompt("Ingresa valor producto2"));
+        let resultados=a+b;
+        let resultados2=(resultados*19/100);
+        let resultados3=resultados+resultados2
+        document.write("es ");
+        document.write("total a pagar sin iva es ======>",SPeso.format (resultados));
+        document.write("<br>  total a pagar del iva es ======>",SPeso.format(resultados2));
+        document.write("<br> el total a pagar con iva es ======>",SPeso.format(resultados3));
+    document.write("<br>*****************************************************");
+    </script>
+</center>
+</body>
+</html>
