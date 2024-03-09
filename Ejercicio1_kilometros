@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <center>
+        <h2> ******* Escribe un programa que solicite al usuario ingresar el número de kilómetros recorridos por su coche y el número de litros consumidos.******* </h2><h2>*********** El script debe mostrar el consumo de combustible por kilómetro.*****</h2>
+    <script>
+        let litros,kilometros,resultado;
+       litros=parseInt(prompt("Ingrese litos"));
+       kilometros=parseInt(prompt("Ingrese kilometros"));
+       resultado=litros/kilometros;
+       alert("El consumo de combustible por kilometro es =============> "+resultado);
+       document.write("El consumo de combustible por kilometro es =============> "+resultado);
+
+    </script>
+</center>
+</body>
+</html>
