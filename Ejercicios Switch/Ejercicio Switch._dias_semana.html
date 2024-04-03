@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio Switch</title>
+</head>
+<body>
+    <h1>Ejercicio Switch</h1>
+    <script>
+        let dia,nombredia;
+
+        dia=parseInt(prompt("ingrese el numero del dia"));
+
+        switch (dia){
+            case 1:
+            nombredia=("El numero de dia que ingresaste es Lunes");
+            break
+            case 2:
+            nombredia=("El numero de dia que ingresaste es Martes");
+            break
+            case 3:
+            nombredia=("El numero de dia que ingresaste es Miercoles");
+            break
+            case 4:
+            nombredia=("El numero de dia que ingresaste es Jueves");
+            break
+            case 5:
+            nombredia=("El numero de dia que ingresaste es Viernes");
+            break
+            case 6:
+            nombredia=("El numero de dia que ingresaste es Sabado");
+            break
+            case 7:
+            nombredia=("El numero de dia que ingresaste es Domingo");
+            break
+            default:
+            nombredia=("el numero que ingresaste no esta en el rango de dias de la semana");
+        }
+        document.write(nombredia);
+
+  </script>
+</body>
+</html>

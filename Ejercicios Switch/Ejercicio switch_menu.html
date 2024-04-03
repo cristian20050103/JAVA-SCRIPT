@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio menu</title>
+</head>
+<body>
+    <style>
+        .menu{
+            border: solid black 2px;
+            border-radius: 20px;
+            background-color:rgba(255, 0, 0, 0.5);
+            width:400px;
+            margin:0 auto;
+            text-align: center;
+        }
+        .menu2{
+            border: solid black 2px;
+            border-radius: 20px;
+            background-color:rgba(255, 0, 0, 0.5);
+            width:400px;
+            margin:0 auto;
+            text-align: center;
+            margin-top: 20px;
+            font-size: 20px;
+            color:black;
+        }
+    </style>
+    <div class="menu">
+    <h2>menu #1</h2>
+    <p>arroz pasta carne de res</p>
+    <h2>menu #2</h2>
+    <p> arroz ensalada de pollo</p>
+    <h2>menu #3</h2>
+    <p> arroz frijoles carne de cerdo </p>
+    <h2>menu #4</h2>
+    <p>arroz garvansos carne de cerdo </p>
+    </div>
+    <div class="menu2">
+    <Script>
+        let menu,opcion_menu;
+        menu=parseInt(prompt("ingrese el numero del plato que quiere"));
+        switch(menu){
+            case 1:
+            opcion_menu=("elegiste el menu 1 el plato contiene lo siguiente: <br> arroz pasta carne de res");
+            break
+            case 2:
+            opcion_menu=("elegiste el menu 2 el plato contiene lo siguiente: <br> arroz ensalada de pollo");
+            break
+            case 3:
+            opcion_menu=("elegiste el menu 3 el plato contiene lo siguiente: <br>  arroz frijoles carne de cerdo");
+            break
+            case 4:
+            opcion_menu=("elegiste el menu 3 el plato contiene lo siguiente: <br> arroz garvansos carne de cerdo");
+            break
+            default:
+            opcion_menu=("el menu que ingresaste no existe")
+        }
+        document.write(opcion_menu);
+    </Script>
+</div>
+</body>
+</html>
